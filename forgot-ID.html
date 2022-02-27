@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/pages.css" />
+    <script
+      src="https://kit.fontawesome.com/d591cda822.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Log In</title>
+  </head>
+  <body>
+    <main>
+      <div class="container" id="forgotID-container">
+        <div class="logo"><i class="fa-brands fa-apple fa-4x"></i></div>
+        <p class="sign-info">Change your Apple ID</p>
+        <div class="input">
+          <form id="forgot-form">
+            <input
+              type="text"
+              name="Apple ID Password"
+              id="forgotfname"
+              class="apple-id"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="Apple ID Password"
+              id="forgotlname"
+              class="apple-id"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="text"
+              name="Apple ID Password"
+              id="forgotBday"
+              class="apple-id"
+              placeholder="Birthday"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              required
+            />
+            <input
+              type="email"
+              name="Apple ID Password"
+              id="newID"
+              class="apple-id"
+              placeholder="New Apple ID"
+              required
+            />
+            <input type="submit" value="Continue" id="forgot-form_btn" />
+          </form>
+          <div class="links" id="forgotID">
+            <a href="./forgot-pass.html">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Scripts/forgot-ID.js"></script>
+  </body>
+</html>

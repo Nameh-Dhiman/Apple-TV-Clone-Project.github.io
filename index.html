@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple TV+</title>
+    <link rel="icon" href="./Images/TV App Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/glider.min.css" />
+    <link rel="stylesheet" href="./Styles/data.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d591cda822.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+      <div class="closeBtn">
+        <button aria-label="close" class="close-modal_btn"></button>
+      </div>
+      <div class="modal-pages">
+        <iframe
+          src="./sign-in.html"
+          width="100%"
+          height="100%"
+          title="Sign In"
+          id="modal-iframe"
+        ></iframe>
+      </div>
+    </div>
+    <div id="advertisement" class="advertisement hide">
+      <div class="adv-details">
+        <p class="adv-heading">All Apple Originals</p>
+        <p class="adv-desc">
+          Start watching with 7 Days free. Or 3 months free when you buy an
+          eligible Apple device.&nbsp<a href="https://www.apple.com/promo/"
+            >Terms apply.</a
+          >
+        </p>
+      </div>
+      <div class="cta">
+        <div class="cta-btn">Start Free Trial</div>
+        <p class="cta-desc">7 days free, then $4.99/month.</p>
+      </div>
+    </div>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-content">
+          <a href="/" id="main-logo"></a>
+          <button class="sign-in_btn">
+            <p id="signin-btn_text">
+              <i class="fa-solid fa-user fa-sm"></i> Sign In
+            </p>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="jumbotron">
+        <img
+          src="./Images/Tedd Lasso.jpg"
+          alt="Tedd Lasso"
+          class="jumbotron-img"
+        />
+        <div class="jumbotron-content">
+          <p class="jumbotron-main_heading">All Apple Originals</p>
+          <p class="jumbotron-sub_heading">
+            Exclusively on Apple TV+. Watch here and on the Apple TV app across
+            your devices.
+          </p>
+          <button class="jumbotron-btn">Start Free Trial</button>
+          <p class="jumbotron-info">7 days free, then $4.99/month</p>
+          <p class="jumbotron-info">
+            Or 3 months free when ou buy an eligible Apple device.&nbsp<a
+              href=" "
+              >Terms apply.</a
+            >
+            Some titles coming later to Apple TV+.
+          </p>
+          <a href="#latestOrg" id="jumbotron-arrow"
+            ><i class="fa-solid fa-angle-down fa-lg"></i
+          ></a>
+        </div>
+      </div>
+      <section id="latestOrg" class="cont">
+        <h3 class="cont-h3">Latest Originals</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="entrSsn" class="cont">
+        <h3 class="cont-h3">Watch Entire Seasons</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <div class="playback">
+        <video
+          width="100%"
+          height="100%"
+          muted
+          loop
+          preload="metadata"
+          autoplay
+          src="./Videos/Finch.mp4"
+        ></video>
+        <div class="playback-content">
+          <div class="playback-content_text">
+            <p class="playback-category">SCI-FI</p>
+            <p class="playback-heading">
+              Immerse Yourself in the Extraordinary
+            </p>
+            <p class="playback-info">
+              Discover series and films that will take you places you never
+              imagined.
+            </p>
+          </div>
+          <div class="playback-slider">
+            <section id="videoDiv" class="cont">
+              <div class="glider-contain">
+                <div class="glider"></div>
+                <button aria-label="Previous" class="glider-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="grey"
+                    class="bi bi-chevron-left bottom5"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    />
+                  </svg>
+                </button>
+                <button aria-label="Next" class="glider-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="grey"
+                    class="bi bi-chevron-right bottom5"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- <div class="slider"></div> -->
+      </div>
+
+      <hr />
+      <section id="comingSoon" class="cont">
+        <h3 class="cont-h3">Coming Soon</h3>
+        <p class="cont-p">Add to your Up Next watchlist today.</p>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="tales" class="cont">
+        <h3 class="cont-h3">Eerie Tales</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="mysteries" class="cont">
+        <h3 class="cont-h3">Mysteries & Whodunits</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="voice" class="cont">
+        <h3 class="cont-h3">Finding Thier Voice</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="extraOrd" class="cont">
+        <h3 class="cont-h3">Extraordinary People</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="creatures" class="cont">
+        <h3 class="cont-h3">Creatures & Critters</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="jumboSlider" class="cont">
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+              id="left"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+              id="right"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="dramaSeries" class="cont">
+        <h3 class="cont-h3">All Drama Series</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="severWN" class="cont">
+        <h3 class="cont-h3">Severance: Watch Now</h3>
+        <p class="cont-p">
+          Adam Scott stars in a darkly thrilling new series from Ben Stiller.
+        </p>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="featurefilms" class="cont">
+        <h3 class="cont-h3">All Feature Films</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="comSeries" class="cont">
+        <h3 class="cont-h3">All Comedy Series</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="amazPlanet" class="cont">
+        <h3 class="cont-h3">Our Amazing Planet</h3>
+        <p class="cont-p">Explore nature documentary films and series.</p>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="nonFi" class="cont">
+        <h3 class="cont-h3">All Nonfiction Series</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="kidsFam" class="cont">
+        <h3 class="cont-h3">Kids and Family</h3>
+        <p class="cont-p">
+          Discover shows and movies filled with wonder and imagination.
+        </p>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="funForAll" class="cont">
+        <h3 class="cont-h3">Fun for All</h3>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section id="inspirations" class="cont">
+        <h3 class="cont-h3">Inspirations</h3>
+        <p class="cont-p">The stories behind the story.</p>
+        <div class="glider-contain">
+          <div class="glider"></div>
+          <button aria-label="Previous" class="glider-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-left bottom"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+          <button aria-label="Next" class="glider-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="grey"
+              class="bi bi-chevron-right bottom"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <div id="devices-info_container">
+        <div class="devices-info">
+          <div class="tv-logo">
+            <img src="./Images/TV App Logo.png" alt="" />
+          </div>
+          <p class="devices-heading">Watch Apple TV+ here or anywhere.</p>
+          <p class="devices-subheading">
+            Find Apple TV+ on the Apple TV app, available on Apple Devices,
+            smart TVs, and more.
+          </p>
+          <p class="support-link">
+            <a href="https://support.apple.com/en-in/guide/tvplus/welcome/web"
+              >See all supported devices&nbsp></a
+            >
+          </p>
+          <div class="devices">
+            <div class="device">
+              <img src="./Images/product_landing 1.png" />
+              <p class="dev-cat">Apple TV</p>
+            </div>
+            <div class="device">
+              <img src="./Images/product_landing 2.png" />
+              <p class="dev-cat">iPhone</p>
+            </div>
+            <div class="device">
+              <img src="./Images/product_landing 3.png" />
+              <p class="dev-cat">iPad</p>
+            </div>
+            <div class="device">
+              <img src="./Images/product_landing 4.png" />
+              <p class="dev-cat">Mac</p>
+            </div>
+            <div class="device">
+              <img src="./Images/product_landing 5.png" />
+              <p class="dev-cat">Airplay</p>
+            </div>
+          </div>
+          <p class="dev-info">See on your big screen.</p>
+          <p class="dev-setup">
+            <a href="https://support.apple.com/en-in/guide/tvplus/welcome/web"
+              >Set up your device&nbsp></a
+            >
+          </p>
+          <p class="dev-compt">
+            <a href="https://www.apple.com/apple-tv-app/devices/"
+              >Explore compatible devices&nbsp></a
+            >
+          </p>
+          <div class="compt-devices">
+            <div class="compt-device">
+              <img src="./Images/banner 1.png" alt="" />
+              <p class="dev-cat">Streaming Devices</p>
+              <ul class="dev-list">
+                <li>Roku</li>
+                <li>Fire TV</li>
+                <li>Google TV</li>
+                <li>Android TV</li>
+              </ul>
+            </div>
+            <div class="compt-device">
+              <img src="./Images/banner 2.png" alt="" />
+              <p class="dev-cat">Smart TVs</p>
+              <ul class="dev-list">
+                <li>Samsung</li>
+                <li>LG</li>
+                <li>VIZIO</li>
+                <li>Sony</li>
+              </ul>
+            </div>
+            <div class="compt-device">
+              <img src="./Images/banner 3.png" alt="" />
+              <p class="dev-cat">Gaming Consoles</p>
+              <ul class="dev-list">
+                <li>PlayStation</li>
+                <li>Xbox</li>
+              </ul>
+            </div>
+          </div>
+          <p class="avail">Device availability varies by country or region.</p>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="main-footer">
+        <div class="main-footer_info">
+          <div class="copy">
+            Copyright &copy; 2022 Apple Inc. All rights reserved.
+          </div>
+          <div class="main-footer_info-nav">
+            <div class="footer-info_items">Internet Service Terms</div>
+            <div class="footer-info_items">Apple TV & Privacy</div>
+            <div class="footer-info_items">Cookie Warning</div>
+            <div class="footer-info_items" id="footer-support_info">
+              Support
+            </div>
+          </div>
+        </div>
+        <div class="main-footer_country">United States</div>
+      </div>
+    </footer>
+    <script src="./Scripts/glider.min.js"></script>
+    <script src="./Scripts/data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/signin-pass.js"></script>
+  </body>
+</html>

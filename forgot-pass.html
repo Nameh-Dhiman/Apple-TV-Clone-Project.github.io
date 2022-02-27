@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/pages.css" />
+    <script
+      src="https://kit.fontawesome.com/d591cda822.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Log In</title>
+  </head>
+  <body>
+    <main>
+      <div class="container" id="forgot-container">
+        <div class="logo"><i class="fa-brands fa-apple fa-4x"></i></div>
+        <p class="sign-info">Change your Password</p>
+        <p class="desc">Use valid Apple ID to change the Password</p>
+        <div class="input">
+          <form id="forgot-form">
+            <input
+              type="text"
+              name="Apple ID Password"
+              id="forgotEmail"
+              class="apple-id"
+              placeholder="Apple ID"
+              required
+            />
+            <input
+              type="password"
+              name="Apple ID Password"
+              id="forgotPass"
+              class="apple-id"
+              placeholder="New Password"
+              required
+            />
+            <input type="submit" value="Continue" id="forgot-form_btn" />
+          </form>
+          <div class="links" id="forgotPass">
+            <a href="./forgot-ID.html">Forgot Apple ID?</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Scripts/forgot-pass.js"></script>
+  </body>
+</html>

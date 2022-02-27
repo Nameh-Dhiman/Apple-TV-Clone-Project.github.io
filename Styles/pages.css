@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(169, 169, 169);
+  border-radius: 0.5rem;
+}
+
+#signup-container {
+  padding-top: 3rem;
+}
+
+#privacy-container {
+  padding-top: 2rem;
+}
+
+#pass-container {
+  padding-top: 5rem;
+}
+
+#forgot-container {
+  padding-top: 3rem;
+}
+
+#forgotID-container {
+  padding-top: 1rem;
+}
+
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* ####################### Sign In ###################### */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.logo {
+  color: #cccccc;
+}
+
+.container i {
+  color: #cccccc;
+  height: 2rem;
+}
+
+.sign-info {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5f5f7;
+  margin-bottom: 0;
+}
+
+.desc {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #f5f5f7;
+}
+
+.input {
+  position: relative;
+}
+
+.apple-id {
+  background: black;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 21rem;
+  margin-top: 1.2rem;
+  padding: 0.8rem 2.6rem 0.8rem 1rem;
+  color: #f5f5f7;
+  border: 2px solid #494949;
+  transition: 0.2s ease-in;
+}
+
+.apple-id:hover {
+  border: 2px solid #409cff;
+}
+
+.apple-id input::-webkit-input-placeholder {
+  transition: 0.2s ease-in;
+  color: #494949;
+  opacity: 1;
+}
+
+.apple-id input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+.signin-logo {
+  position: absolute;
+  top: 45%;
+  right: 3%;
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: invert(40%);
+  cursor: pointer;
+}
+
+.signin-logo:hover {
+  filter: invert(100%);
+}
+
+.links {
+  margin-top: 6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #409cff;
+  display: block;
+  margin: 1.5rem 0;
+}
+
+.apple-tv_logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.apple-tv_logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ####################### Privacy Page ###################### */
+
+.privacy-info {
+  margin: 0.8rem 0 1.5rem 0;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #f5f5f7;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+.privacy-desc {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #cccccc;
+  text-align: center;
+  width: 36rem;
+}
+
+.desc-text {
+  margin-bottom: 0.2rem;
+}
+
+.privacy-desc a {
+  text-decoration: none;
+  color: #409cff;
+  display: block;
+  margin: 0;
+}
+
+#privacy-agree {
+  margin-top: 2.5rem;
+  background: #0071e3;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1.15rem 2rem;
+  border: none;
+  width: 30rem;
+  border-radius: 0.5rem;
+}
+
+#privacy-agree a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ####################### Details Form ###################### */
+
+#form-container {
+  position: relative;
+  width: 50%;
+  margin: 1rem auto 6rem auto;
+}
+
+.main-heading {
+  color: #f5f5f7;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+#floated-logo {
+  position: fixed;
+  top: 3%;
+  right: 5%;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+#fname,
+#lname,
+#bday,
+#email,
+#pass {
+  background-color: #222;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  width: 32.5rem;
+  height: 3.3rem;
+  padding: 1.05882rem 0.94118rem 1.05882rem 0.94118rem;
+  color: #f5f5f7;
+  border: 1px solid #494949;
+  transition: 0.2s ease-in;
+}
+
+#fname:focus,
+#lname:focus,
+#bday:focus,
+#email:focus,
+#pass:focus {
+  border: 4px solid #409cff;
+  outline: none;
+}
+
+#myForm input[type="date"]::-webkit-inner-spin-button,
+#myForm input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+#fname::-webkit-input-placeholder,
+#lname::-webkit-input-placeholder,
+#bday::-webkit-input-placeholder,
+#email::-webkit-input-placeholder,
+#pass::-webkit-input-placeholder {
+  transition: 0.2s ease-in;
+  color: #494949;
+  opacity: 1;
+}
+
+#fname:focus::-webkit-input-placeholder,
+#lname:focus::-webkit-input-placeholder,
+#bday:focus::-webkit-input-placeholder,
+#email:focus::-webkit-input-placeholder,
+#pass:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+#fname,
+#lname,
+#bday {
+  margin: 0 0 0.8rem 0;
+}
+
+#email,
+#pass {
+  margin: 1rem 0 0.8rem 0;
+}
+
+#country {
+  font-size: 0.8rem;
+  color: #409cff;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: #333333;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+#country::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+#country::-webkit-scrollbar-thumb {
+  background-color: rgb(169, 169, 169);
+  border-radius: 0.5rem;
+}
+
+#myForm label {
+  color: #999;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.terms {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+#myForm input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 1.5px;
+}
+
+.check-text .heading {
+  font-size: 1.05rem;
+  margin: 0 0 0 0.8rem;
+  color: #f5f5f7;
+}
+
+.check-text .country {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0.4rem 0 0 0.8rem;
+}
+
+.divider {
+  margin: 0.8rem 0;
+  height: 1px;
+  width: 32.5rem;
+  border-radius: 0.5rem;
+  background: #444444;
+}
+
+.conditions {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999;
+  width: 33rem;
+}
+
+.conditions a {
+  color: #409cff;
+  text-decoration: none;
+}
+
+.submit {
+  height: 4rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background: #333333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid #444444;
+}
+
+#submit-btn {
+  margin: 1rem 2.5rem;
+  background: #0071e3;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#forgot-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#forgot-form input {
+  margin: 0.5rem 0;
+}
+
+#forgot-form_btn {
+  margin: 4rem 2.5rem;
+  margin-bottom: 0;
+  background: #0071e3;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  width: 12rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#forgotPass {
+  margin-top: 3rem;
+}
+
+#forgotID {
+  margin-top: 2rem;
+}
