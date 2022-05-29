@@ -14,14 +14,14 @@ It offers a selection of original production films and television series called 
 It's the portal for Apple's Apple TV+ service, featuring original content created for Apple.
 </p>
 
-###Credits
+### Credits
 ___
 * Images: [tv.apple.com](https://tv.apple.com/)
 * Content & Data: [tv.apple.com](https://tv.apple.com/)
 * Icons: [Bootstrap Icons](https://icons.getbootstrap.com/)
 * References: [MDN Docs](https://developer.mozilla.org/en-US/ ) | [W3Schools](https://www.w3schools.com/) | [Glider JS](https://nickpiscitelli.github.io/Glider.js/)
 
-###Tech Stack
+### Tech Stack
 ___
 
 * HTML 5
